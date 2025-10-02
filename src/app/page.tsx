@@ -10,8 +10,8 @@ export default function Home() {
 
       <div className="absolute bottom-1/5 right-4 flex flex-col items-end justify-center">
         <h1 className="text-4xl font-light text-right text-white">LISE & MIKKEL</h1>
-        <h2 className="text-2xl text-right text-white mr-2">Italy Wedding</h2>
-        <p className="text-right text-small mb-8 text-white mr-2">More info coming soon</p>
+        <h2 className="text-2xl text-right text-white mr-2">Italien Bryllup</h2>
+        <p className="text-right text-small mb-8 text-white mr-2">Mere info kommer 01.01.2026</p>
       </div>
 
       {/* <Image src="/images/bryllupsblomst.png" width={300} height={300} alt="Bryllupsblomst" /> */}
