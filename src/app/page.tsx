@@ -1,20 +1,27 @@
+"use client"
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+
 export default function Home() {
   return (
-    <div style={{
-      backgroundImage: "url('/images/bryllupsblomst-new.png')",
-      backgroundSize: 'cover',
-      backgroundPosition: '78% 10%',
-      backgroundRepeat: 'no-repeat',
-    }} 
-    className="relative h-screen w-full flex flex-col items-center justify-center bg-black">
-
-      <div className="absolute bottom-1/5 right-4 flex flex-col items-end justify-center">
-        <h1 className="text-4xl font-light text-right text-white">LISE & MIKKEL</h1>
-        <h2 className="text-2xl text-right text-white mr-2">Bryllup i Italien</h2>
-        <p className="text-right text-small mb-8 text-white mr-2">Mere info kommer 01.01.2026</p>
-      </div>
-
-      {/* <Image src="/images/bryllupsblomst.png" width={300} height={300} alt="Bryllupsblomst" /> */}
-    </div>
+    <section
+      id="hero"
+      className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-[#fffdfb]"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="z-10 flex w-full max-w-xl flex-col items-center gap-2 px-6 text-center"
+      >
+        <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl">
+          LISE &amp; MIKKEL
+        </h1>
+        <p className="text-lg text-gray-900 mb-4">Mere info - 01.01.2026</p>
+        <Image src="/images/wedding-logo.png" alt="Bryllupsblomst" width={200} height={200} />
+        <h2 className="text-3xl font-light text-gray-900 sm:text-3xl mt-4">BRYLLUPSFEST</h2>
+      </motion.div>
+    </section>
   );
 }
