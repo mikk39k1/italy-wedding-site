@@ -7,12 +7,23 @@ import {
 
 const praktiskInfoItems = [
   {
-    title: "Mad og drikke",
+    title: "Økonomi",
     description: (
       <p>
-        Mad og drikke på bryllupsdagen står vi for. Vi vil også sørge for indkøb af mad og drikke
-        til resten af dagene, vi håber derfor at i kunne tænke jer at hjælpe os med at kunne handle
-        ind ved at sende xxxkr til denne mobilepay box. <br /> <br />
+        Vi vil gerne være helt åbne omkring økonomien, for vi ved godt, at det koster både tid og
+        penge at være en del af et bryllup som dette. Endnu et stort TAK for, at I har lyst til at
+        være med. <br /> <br />
+        Villaen og de fire overnatninger er betalt af os. <br />
+        <br /> Fly/transport til Italien er for egen regning. Transport fra lufthavnen til villaen
+        er som udgangspunkt også for egen regning, medmindre vi finder en god løsning på fælles
+        transport. Mere info om dette kommer senere.
+        <br />
+        <br /> Mad og drikke er som udgangspunkt også betalt af os, men for at få det hele til at
+        hænge sammen, beder vi ydmygt om et bidrag på <br />
+        <span className="font-semibold">400 kr. pr. gæst.</span> <br />
+        <br />
+        Til dette har vi lavet en MobilePay-box:
+        <br />
         <span className="text-base mb-2">
           Link:{" "}
           <a
@@ -24,18 +35,30 @@ const praktiskInfoItems = [
             til box
           </a>{" "}
         </span>
+        <br />
+        Nummer: <span className="font-semibold">5367PD</span>
+      </p>
+    ),
+  },
+  {
+    title: "Mad og drikke",
+    description: (
+      <p>
+        Vi sørger for indkøb af mad og drikke til alle dagene, så der er gode råvarer til vores
+        fælles måltider. <br />
+        Og igen: meld endelig ind, hvis der er en ret, du drømmer om at lave!
       </p>
     ),
   },
   {
     title: "Parkering",
-    description: "Der er mulighed for parkering af bil ved villaen.",
+    description: "Der er gratis parkering ved villaen.",
   },
   {
     title: "Svar udbedes",
     description: (
       <p>
-        Send venligst jeres svar senest 28.02.2026 til: <br /> <br /> Lise -{" "}
+        Giv os venligst besked om, hvorvidt I kan komme, senest 30.06.2026 <br /> <br /> Lise -{" "}
         <a className="underline font-semibold text-base" href="sms:29165655">
           29 16 56 55
         </a>{" "}
@@ -51,10 +74,9 @@ const praktiskInfoItems = [
     title: "Området",
     description: (
       <p className="text-base leading-relaxed">
-        Området omkring villaen byder på natur, en lille by Sansepolcro hvor man kan finde
-        supermarked, et lille bitte indkøbscenter og restauranter. Her er man meget velkommen til at
-        udforske og opleve det lokale, også at spise på restauranterne i byen, vi vil bare gerne
-        vide på dagen hvor mange spiser i villaen.
+        Området byder på smuk natur og den nærliggende by Sansepolcro med indkøb og restauranter. I
+        er selvfølgelig velkomne til at gå på opdagelse og opleve det lokale.
+        <br /> <br /> Villaen har en privat pool, som I kan bruge under hele opholdet.
       </p>
     ),
   },

@@ -14,8 +14,8 @@ import { useCallback, useRef, useEffect, useState } from "react";
 
 const menuItems = [
   { id: "vision", label: "Vision" },
-  { id: "transport", label: "Transport" },
   { id: "program", label: "Program" },
+  { id: "transport", label: "Transport" },
   { id: "praktisk-info", label: "Praktisk info" },
   { id: "toast-master", label: "Toastmaster" },
   { id: "lokation", label: "Lokation" },
@@ -91,8 +91,8 @@ export default function Home() {
 
       <Hero />
       <VisionSection />
-      <TransportSection />
       <ProgramSection />
+      <TransportSection />
       <PraktiskInfoSection />
       <ToastMasterSection />
       <LokationSection />

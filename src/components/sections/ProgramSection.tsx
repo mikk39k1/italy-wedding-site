@@ -17,18 +17,19 @@ const programDays = [
     dateString: "Mandag",
     title: "Ankomst og velkomst",
     activities: [
-      { time: "10:00", activity: "Morgenmad" },
-      { time: "12:00", activity: "Frokost" },
-      { time: "18:00", activity: "Aftensmad" },
+      { time: "15:00", activity: "Herfra kan man ankomme" },
+      { time: "19:00", activity: "Aftensmad" },
     ],
   },
   {
     date: "22.09.2026",
     dateString: "Tirsdag",
-    title: "Forbedredelse og hygge",
+    title: "Forberedelser og hygge",
     activities: [
-      { time: "10:00", activity: "Morgenmad" },
-      { time: "18:00", activity: "Aftensmad" },
+      { time: "09:00", activity: "Morgenmad" },
+      { time: "13:00", activity: "Fælles aktivitet" },
+      { time: "19:00", activity: "Aftensmad" },
+      { time: "00:00", activity: "Senest godnat (fast på denne dag)" },
     ],
   },
   {
@@ -36,21 +37,33 @@ const programDays = [
     dateString: "Onsdag",
     title: "Bryllupsfest",
     activities: [
-      { time: "10:00", activity: "Morgenmad" },
-      { time: "12:00", activity: "Frokost" },
+      { time: "09:00", activity: "Pilates med Ida" },
+      { time: "10:00", activity: "Brunch" },
+      { time: "16:00", activity: "Vielse" },
+      { time: "17:00", activity: "Reception og appetizers" },
+      { time: "19:00", activity: "Middag og taler" },
+      { time: "23:00", activity: "Brudevals og FEST" },
+      { time: "01:00", activity: "Natmad" },
     ],
   },
   {
     date: "24.09.2026",
     dateString: "Torsdag",
     title: "Tømmermændsdag",
-    activities: [{ time: "10:00", activity: "Morgenmad" }],
+    activities: [
+      { time: "10:00", activity: "Morgenmad" },
+      { time: "13:00", activity: "Fælles aktivitet" },
+      { time: "19:00", activity: "Aftensmad" },
+    ],
   },
   {
     date: "25.09.2026",
     dateString: "Fredag",
     title: "Afslutning og afrejse",
-    activities: [{ time: "11:00", activity: "Udtjekning" }],
+    activities: [
+      { time: "09:00", activity: "Morgenmad" },
+      { time: "11:00", activity: "Udtjekning og tak for nu <3" },
+    ],
   },
 ];
 
@@ -99,7 +112,11 @@ export function ProgramSection() {
       <header className="max-w-xl">
         <h2 className="my-6 text-4xl tracking-wide text-gray-900 font-light">Program</h2>
       </header>
-      <p className="text-gray-900 mb-4">Vælg en dato for at se programmet</p>
+      <p className="text-gray-900 mb-4 ">
+        Programmet er lavet som en løs ramme for dagene, så I har en fornemmelse af, hvad der
+        venter. Intet er fastlagt, og dagene får lov at forme sig undervejs.
+        <br /> Det er naturligvis frivilligt om man deltager i de fælles aktiviteter.{" "}
+      </p>
       <div className="w-full flex justify-left mb-6">
         <Select value={selectedDateString} onValueChange={setSelectedDateString}>
           <SelectTrigger className="w-full bg-white font-semibold">

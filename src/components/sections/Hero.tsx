@@ -16,7 +16,7 @@ export function Hero() {
         <h1 className="text-4xl font-light tracking-wide text-gray-900 sm:text-5xl">
           LISE &amp; MIKKEL
         </h1>
-        <p className="text-lg text-gray-900 mb-4">Mere info - 01.01.2026</p>
+        <p className="text-lg text-gray-900 mb-4">21.09.2026 - 25.09.2026</p>
         <Image src="/images/wedding-logo.png" alt="Bryllupsblomst" width={200} height={200} />
         <h2 className="text-3xl font-light text-gray-900 sm:text-3xl mt-4">BRYLLUPSFEST</h2>
       </motion.div>
