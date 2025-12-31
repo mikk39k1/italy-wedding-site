@@ -6,12 +6,12 @@ export function ToastMasterSection() {
     >
       <header>
         <h2 className="text-4xl tracking-wide text-gray-900 font-light mb-4">Toastmaster</h2>
-        <p className="mt-2 text-gray-600 text-base">
+        <p className="mt-2 text-gray-900 text-base">
           Vores søde toastmaster Helene sørger for overblik over taler og indslag på selve
           bryllupsdagen.
         </p>
       </header>
-      <div className="space-y-4 text-sm text-gray-700">
+      <div className="space-y-4 text-sm text-gray-900">
         <p className="text-base">
           Har du lyst til at sige et par ord eller planlægger et indslag, så tag endelig kontakt, så
           bliver det lagt ind i programmet.
